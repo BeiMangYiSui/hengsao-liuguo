@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>横扫六国 - 一人破万军</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container" class="game-container">
+    <canvas id="game-canvas"></canvas>
+
+    <div class="top-nav">
+      <button id="btn-pause" class="nav-btn" aria-label="暂停" style="display:none;">⏸</button>
+      <button id="btn-sound" class="nav-btn" aria-label="声音开关">🔊</button>
+    </div>
+
+    <div id="result-overlay" class="result-overlay" style="display:none;">
+      <div class="overlay-buttons">
+        <button id="btn-save" class="action-btn primary-btn">保存战报图片</button>
+        <button id="btn-replay" class="action-btn secondary-btn">再来一局</button>
+        <button id="btn-change" class="text-btn">换个英雄</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <script src="assets_data.js"></script>
+  <script src="audio_data.js"></script>
+  <script src="assets.js"></script>
+  <script src="ui.js"></script>
+  <script src="core.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
